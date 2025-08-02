@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datela</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff6600 0%, #ff8840 100%);
+            /* degradê suave */
+            padding: 80px 20px;
+            /* aumentou mais a altura */
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.8rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .logo {
+            font-weight: bold;
+            color: #ff6a00;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav .btn {
+            background-color: #ff6a00;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+        }
+
+        .banner {
+            max-width: 800px;
+            margin: 30px auto;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .produtos {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .produtos h2 {
+            color: #ff6a00;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .produto {
+            background-color: #fff;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .produto img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+
+        footer {
+            background-color: #fff2e6;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        footer strong {
+            color: #ff6a00;
+        }
+
+        footer {
+            background-color: #fff2e6;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 1rem;
+        }
+
+        .footer-contato {
+            margin-top: 15px;
+        }
+
+        .footer-contato a {
+            color: #25D366;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .footer-contato a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-contato i {
+            margin-right: 8px;
+            color: #25D366;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Imagens/Logo_datela.png" style="height: 50px;">
+        </div>
+        <div>
+            <a href="#produtos">Produtos</a>
+            <a href="https://wa.me/5547991422000" target="_blank" class="btn">
+                <i class="fab fa-whatsapp"></i> Contato WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Datela</h1>
+        <p>Telas</p>
+    </header>
+
+    <img class="banner" src="https://images7.alphacoders.com/135/1357477.jpeg" alt="Banner" />
+
+    <section class="produtos" id="produtos">
+        <h2>Nossos Produtos</h2>
+        <p>Explore nossa seleção cuidadosamente curada de produtos tecnológicos de última geração</p>
+
+        <div class="grid">
+            <div class="produto">
+                <img src="https://cdn.rafled.com/anime-icons/images/3155b42a125f523c187b7efee81d02926398fd07182cb99a3e7122010b6cccdf.jpg"
+                    alt="Nino">
+                <h3>Nino</h3>
+                <p>Tsundere.</p>
+            </div>
+            <div class="produto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjdGU2H77cuJG40xzXtHPKkeUY1BL7M1n3dA&s"
+                    alt="Carlotta">
+                <h3>Carlotta</h3>
+                <p>Melhor de Wuthering Waves.</p>
+            </div>
+            <div class="produto">
+                <img src="https://i.scdn.co/image/ab67616d00001e026f157409ae8578b9695be2b3" alt="Laptop Performance">
+                <h3>Furina</h3>
+                <p>melhor personagem de genshin.</p>
+            </div>
+            <div class="produto">
+                <img src="https://upload-os-bbs.hoyolab.com/upload/2024/08/11/177637264/8bb9b54278321e7733b809467ea69fe3_9007993663820489394.jpg?x-oss-process=image%2Fresize%2Cs_1000%2Fauto-orient%2C0%2Finterlace%2C1%2Fformat%2Cwebp%2Fquality%2Cq_70"
+                    alt="Smartwatch Fitness">
+                <h3>Hu tao</h3>
+                <p>segunda melhor.</p>
+            </div>
+            <div class="produto">
+                <img src="https://i.pinimg.com/736x/b2/f1/25/b2f12501a5e45ac6395aa3ff7b1ff54b.jpg"
+                    alt="Tablet Creative Pro">
+                <h3>Cartethya</h3>
+                <p>Melhor na forma pequena.</p>
+            </div>
+            <div class="produto">
+                <img src="https://i.pinimg.com/736x/6d/90/33/6d90332a4de893fe79f25fa0410bcbbf.jpg"
+                    alt="Speaker Bluetooth 360">
+                <h3>Mai</h3>
+                <p>Bunny.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-contato">
+            <a href="https://wa.me/5547991422000" target="_blank">
+                <i class="fab fa-whatsapp"></i> (47) 99142-2000
+            </a>
+            <br><strong>Datela</strong>
+        </div>
+    </footer>
+</body>
+
+</html>
