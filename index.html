@@ -67,13 +67,21 @@
             font-weight: bold;
         }
 
-        .contato-wpp {
+        .contato-wpp,
+        .contato-email {
             display: flex;
             align-items: center;
             gap: 8px;
             text-decoration: none;
-            color: #25D366;
             font-weight: bold;
+        }
+
+        .contato-wpp {
+            color: #25D366;
+        }
+
+        .contato-email {
+            color: #ff6a00;
         }
 
         /* Banner */
@@ -147,10 +155,17 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            color: #25D366;
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2rem;
+        }
+
+        .footer-contato a.whatsapp {
+            color: #25D366;
+        }
+
+        .footer-contato a.email {
+            color: #ff6a00;
         }
 
         footer strong {
@@ -198,9 +213,20 @@
             }
 
             .contato-wpp,
+            .contato-email,
             .footer-contato a {
                 font-size: 1rem;
             }
+        }
+
+        .produto {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .produto h3 {
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
@@ -212,6 +238,10 @@
         </div>
         <div class="menu">
             <a href="#produtos" class="btn-produtos">Produtos</a>
+            <a href="mailto:datela.telas@gmail.com" class="contato-email">
+                <i class="fas fa-envelope"></i>
+                <span>datela.telas@gmail.com</span>
+            </a>
             <a href="https://wa.me/5547991422000" class="contato-wpp">
                 <i class="fab fa-whatsapp"></i>
                 <span>(47) 99142-2000</span>
@@ -227,51 +257,50 @@
     <img class="banner" src="Imagens/banner-datela.png" alt="Banner">
 
     <section class="produtos" id="produtos">
-        <h2>Nossos Produtos</h2>
-        <p>Explore nossa seleção cuidadosamente curada de produtos tecnológicos de última geração</p>
+        <h2>Nossos Produtos e Serviços</h2>
 
         <div class="grid">
-            <div class="produto">
-                <img src="Imagens/telalistrada3.png" alt="Nino">
+            <a href="lona-conrrugadora.html" class="produto">
+                <img src="Imagens/telalistrada3.png" alt="Lona Conrrugadora">
                 <h3>Lona Conrrugadora</h3>
-                <p>Listras aderentes</p>
-            </div>
-            <div class="produto">
-                <img src="Imagens/Correia autoemendavel2.jpg" alt="Carlotta">
+            </a>
+            <a href="correia-autoemendavel.html" class="produto">
+                <img src="Imagens/Correia autoemendavel2.jpg" alt="Correia Autoemendavel">
                 <h3>Correia Autoemendavel</h3>
-                <p>dps</p>
-            </div>
-            <div class="produto">
-                <img src="Imagens/telas tecidas.jpg" alt="Furina">
-                <h3>Tela Tecida</h3>
-                <p>dps</p>
-            </div>
-            <div class="produto">
-                <img src="Imagens/conserto.jpg" alt="Hu Tao">
-                <h3>Conserto de Telas Espirais</h3>
-                <p>Telas</p>
-            </div>
-            <div class="produto">
-                <img src="Imagens/Emenda para correias.jpg" alt="Cartethya">
-                <h3>Emenda para Correias</h3>
-                <p>dps</p>
-            </div>
-            <div class="produto">
-                <img src="Imagens/conserto telas tecidas.jpg" alt="Mai">
-                <h3>Conserto de Telas Tecidas</h3>
-                <p>dps.</p>
-            </div>
+            </a>
+            <a href="tela-espiral.html" class="produto">
+                <img src="Imagens/Telas Espiral.jpg" alt="Tela Espiral">
+                <h3>Tela Espiral</h3>
+            </a>
+            <a href="servicos.html" class="produto">
+                <img src="Imagens/conserto.jpg" alt="Serviços">
+                <h3>Serviços</h3>
+            </a>
+            <a href="emendas.html" class="produto">
+                <img src="Imagens/Emenda para correias.jpg" alt="Emendas">
+                <h3>Emendas</h3>
+            </a>
+            <a href="Perfil.html" class="produto">
+                <img src="Imagens/Perfil.jpg" alt="Conserto de Telas Tecidas">
+                <h3>Perfil Flexível</h3>
+            </a>
+        </div>
     </section>
 
     <footer>
         <div class="footer-contato">
-            <a href="https://wa.me/5547991422000">
+            <a href="mailto:datela.telas@gmail.com" class="email">
+                <i class="fas fa-envelope"></i>
+                <span>datela.telas@gmail.com</span>
+            </a>
+            <a href="https://wa.me/5547991422000" class="whatsapp">
                 <i class="fab fa-whatsapp"></i>
                 <span>(47) 99142-2000</span>
             </a>
             <strong>Datela</strong>
         </div>
     </footer>
+
 </body>
 
 </html>
