@@ -29,13 +29,54 @@
 
     .logo img {
       height: 50px;
-      width: auto;
+      max-width: 80%;
     }
+
 
     nav .menu {
       display: flex;
       align-items: center;
       gap: 25px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      nav .menu a {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav .menu {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-top: 15px;
+      }
+
+      nav .menu a {
+        font-size: 1rem;
+      }
     }
 
     .btn-produtos {
@@ -147,18 +188,6 @@
       color: #ff6a00;
       font-size: 1.3rem;
       margin-top: 10px;
-    }
-
-    @media (max-width: 768px) {
-      .produto-detalhe {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .produto-detalhe img {
-        width: 100%;
-        max-width: 400px;
-      }
     }
   </style>
 </head>
